@@ -290,7 +290,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-cover {
-  height: 900px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -329,8 +328,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
-  height: 900px;
-  display: table;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -856,9 +853,10 @@ form label {
 #gtco-header .display-tc,
 #gtco-counter .display-tc,
 .gtco-cover .display-tc {
-  display: table-cell !important;
-  vertical-align: middle;
+  display: block;
+  padding: 6em 0;
 }
+
 #gtco-header .display-tc h1, #gtco-header .display-tc h2,
 #gtco-counter .display-tc h1,
 #gtco-counter .display-tc h2,
